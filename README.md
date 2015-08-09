@@ -39,7 +39,11 @@ In the same directory as the .c file simply run:
 
     gcc audiointensity.c -o audiointensity.exe
     
+Compiling and archiving can be done in one command using the create-release-windows.sh script. Observe that this requires a Bash shell to run, which is included in Cygwin or Msysgit, for example.
+    
 # Compiling from source on *nix    
 In the same directory as the .c file simply run:
 
     gcc audiointensity.c -o audiointensity
+
+Compiling and archiving can be done in one command using the create-release-unix.sh script.

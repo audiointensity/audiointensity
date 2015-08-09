@@ -7,6 +7,7 @@ When running it, it will take some time (seconds to minutes depending on your co
 
 # How to use it on Windows
 Extract all the files from the .zip archive to a folder. Then do either (A) or (B):
+
 (A) Find a movie to analyze and drag-and-drop it onto the audiointensity.bat file. Done.
 
 OR:
@@ -20,6 +21,7 @@ and press Enter.
 
 # How to use it on Unix
 Extract all the files from the .zip archive to a folder. Then do either (A) or (B):
+
 (A) Find a movie to analyze and drag-and-drop it onto the audiointensity.sh file. Done.
 
 OR 

@@ -1,4 +1,6 @@
-﻿#!/bin/bash
+#!/bin/bash
+SCRIPTPATH="dirname $0"
+
 VLC=$(which vlc)
 VLC="/C/Program Files (x86)/VideoLAN/VLC/vlc.exe"
 if [ ! -e "$VLC" ]; then
@@ -26,7 +28,7 @@ fi
 
 args=
 for f in "$@"; do
-	ts=$("$FFMPEG" -i "$f" -vn -acodec pcm_s16le -ar 8000 -ac 1 -f wav -y - 2>/dev/null | ./audiointensity)
+	ts=$("$FFMPEG" -i "$f" -vn -acodec pcm_s16le -ar 8000 -ac 1 -f wav -y - 2>/dev/null | "$SCRIPTPATH/audiointensity")
 	for t in $ts; do
 		#echo time:"$t"  
 		args="$args ""$f"" :start-time=$t :run-time=30 "
